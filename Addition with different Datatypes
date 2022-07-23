@@ -1,0 +1,46 @@
+package q11266;
+class Addition
+{
+	int sum;
+	float sum1;
+	float sum2;
+	double sum3;
+	void add(int a,int b)
+	{
+		sum=a+b;
+		System.out.println("Sum of "+a+" and "+b+" : "+sum);
+	}
+	void add(int a, float b)
+	{
+		sum1=a+b;
+		System.out.println("Sum of "+a+" and "+b+" : "+sum1);
+	}
+	void add(float a, float b)
+	{
+		sum2=a+b;
+		System.out.println("Sum of "+a+" and "+b+" : "+sum2);
+	}
+	void add(float a,double b, double c)
+    {
+        sum3=a+b+c;
+        System.out.println("Sum of "+a+", "+b+" and "+c+" : "+sum3);
+    }
+    public static void main(String args[])
+    {
+    	 int n1,n2;
+    	 float n3,n4;
+    	 double n5,n6;
+    	 n1=Integer.parseInt(args[0]);
+    	 n2=Integer.parseInt(args[1]);
+    	 n3=Float.parseFloat(args[2]);
+    	 n4=Float.parseFloat(args[3]);
+    	 n5=Double.parseDouble(args[4]);
+    	 n6=Double.parseDouble(args[5]);
+    	 Addition obj=new Addition();
+    	 obj.add(n1,n2);
+    	 obj.add(n3,n4);
+    	 obj.add(n2,n4);
+    	 obj.add(n3,n5,n6);
+    }
+}
+         
