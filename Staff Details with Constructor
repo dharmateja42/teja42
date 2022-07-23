@@ -1,0 +1,17 @@
+package q11116;
+public class Staff{
+int idno;	
+String name;
+Staff(int id, String n){
+   idno= id;
+   name=n;
+  }
+  void show(){
+ 	System.out.println("Id : "+idno);
+ 	System.out.println("Name : "+name);
+    }
+ public static void main(String[] args){
+  	Staff object=new Staff(Integer.parseInt(args[0]),args[1]);
+    object.show();
+    }
+}
