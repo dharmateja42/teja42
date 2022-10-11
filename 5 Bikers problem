@@ -1,0 +1,36 @@
+import java.util.*;
+class Speed{
+	    void RacerSpeed(double[] a)
+	    { 
+	    	double avg,sum=0;
+	    	for(int i=0;i<5;i++)
+	    	{
+	    		sum=sum+a[i];
+	    	}
+	    	avg=(double)sum/5;
+	    	System.out.print("The speed of the racers >= average speed "+avg+" : ");
+	    	for(int i=0;i<5;i++)
+	    	{
+	    		if(a[i]>=avg)
+	    		{
+	    			System.out.print(" "+a[i]);
+	    		}	
+	    	}
+	    	System.out.println("");
+	    }
+	}
+class Race
+{
+	 public static void main(String[] args){
+	 	double[] a=new double[5];
+	 	Scanner sc=new Scanner(System.in);
+	 	for(int i=0;i<5;i++)
+	 	{
+	 		System.out.print("Enter the value of racer"+(i+1)+": ");
+	 		a[i]=sc.nextDouble();
+	 	}
+		Speed x=new Speed();
+		x.RacerSpeed(a);
+	 }
+		
+}
